@@ -20,7 +20,7 @@ export const ToDoProvider = ({children}) => {
 
     useEffect(() => getToDoList, []);
 
-    return (<ToDoContext.Provider value={{todoList}}>
+    return (<ToDoContext.Provider value={{todoList, setToDoList}}>
         {children}
     </ToDoContext.Provider>)
 }

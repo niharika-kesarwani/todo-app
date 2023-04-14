@@ -15,6 +15,7 @@ export function ToDoCard ({id, title, description, isCompleted, detail}) {
     return <li key={id} style={liTagStyle}>
         <h3>{detail && "Title: "}{title}</h3>
         <p>{detail && <strong>Description: </strong>}{description}</p>
+        <p>{detail ? <strong>Status:</strong> : "Status:"} {isCompleted ? "Done" : "Not Done"}</p>
         {!detail && <p><NavLink  to={`/${isCompleted ? "done" : "open"}/${id}`}>Expand Todo</NavLink></p>}
         {!detail && <button onClick={btnHandler}>Mark As {isCompleted ? "Undone" : "Done"}</button>}
         <hr />

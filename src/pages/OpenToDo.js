@@ -10,6 +10,7 @@ export function OpenToDo () {
     return (
         <div>
         <h1>Open Todos</h1>
+        <h2>Total todos: {openToDoList.length}</h2>
         <ul>
         {
             openToDoList.map(todo => <ToDoCard {...todo}/>)

@@ -14,7 +14,7 @@ export function DoneToDo () {
         <ul>
         {
             doneToDoList.map(todo => <div>
-                <ToDoCard {...todo}/>
+                <ToDoCard {...todo} done/>
             </div>)
         }
         </ul>

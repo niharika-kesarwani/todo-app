@@ -13,7 +13,7 @@ export function OpenToDo () {
         <h2>Total todos: {openToDoList.length}</h2>
         <ul>
         {
-            openToDoList.map(todo => <ToDoCard {...todo}/>)
+            openToDoList.map(todo => <ToDoCard {...todo} open/>)
         }
         </ul>
         </div>)
